@@ -18,12 +18,12 @@ public class SistemaBanco {
         double valorDeposito = scanner.nextDouble();
         scanner.nextLine();
         conta.depositar(valorDeposito);
-        System.out.println("Saldo após depósito: " + conta.getSaudo());
+        System.out.println("Saldo após depósito: " + conta.getsaldo());
         System.out.println("Digite o valor para saque:");
         double valorSaque = scanner.nextDouble();
         scanner.nextLine();
         conta.sacar(valorSaque);
-        System.out.println("Saldo após saque: " + conta.getSaudo());
+        System.out.println("Saldo após saque: " + conta.getsaldo());
         System.out.println("Digite o valor para transferência:");
         double valorTransferencia = scanner.nextDouble();
         scanner.nextLine();
@@ -32,8 +32,8 @@ public class SistemaBanco {
         String numeroContaDestino = scanner.nextLine();
         ContaBancaria contaDestino = new ContaBancaria("Destinatário", 0, numeroContaDestino);
         conta.transferir(valorTransferencia, contaDestino);
-        System.out.println("Saldo após transferência: " + conta.getSaudo());
-        System.out.println("Saldo da conta de destino: " + contaDestino.getSaudo());
+        System.out.println("Saldo após transferência: " + conta.getsaldo());
+        System.out.println("Saldo da conta de destino: " + contaDestino.getsaldo());
         scanner.close();
     }
 }

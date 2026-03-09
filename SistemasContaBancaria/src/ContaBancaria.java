@@ -1,17 +1,17 @@
 public class ContaBancaria {
     private String titular;
-    private double saudo;
+    private double saldo;
     private String numeroConta;
 
-    public ContaBancaria(String titular, double saudo, String numeroConta) {
+    public ContaBancaria(String titular, double saldo, String numeroConta) {
         this.titular = titular;
-        this.saudo = saudo;
+        this.saldo = saldo;
         this.numeroConta = numeroConta;
     }
 
     public void depositar(double valor) {
         if (valor>0) {
-          saudo += valor;  
+          saldo += valor;  
         } else {
             System.out.println("Valor de depósito deve ser positivo.");
         }
@@ -19,15 +19,15 @@ public class ContaBancaria {
     }
 
     public void sacar(double valor){
-        if (valor > saudo) {
+        if (valor > saldo) {
             System.out.println("Saldo insuficiente para saque.");
         } else {
-            saudo -= valor;
+            saldo -= valor;
         }
     }
 
     public void transferir(double valor, ContaBancaria destino){
-        if (valor > saudo) {
+        if (valor > saldo) {
             System.out.println("Saldo insuficiente para transferência.");
         } else {
             this.sacar(valor);
@@ -35,7 +35,7 @@ public class ContaBancaria {
         }
     }
 
-    public double getSaudo() {
-        return saudo;
+    public double getsaldo() {
+        return saldo;
     }
 }
