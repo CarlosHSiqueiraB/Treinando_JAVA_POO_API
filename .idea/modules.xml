@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContratoTrabalho/ContratoTrabalho.iml" filepath="$PROJECT_DIR$/ContratoTrabalho/ContratoTrabalho.iml" />
       <module fileurl="file://$PROJECT_DIR$/EvolucaoRPG/EvolucaoRPG.iml" filepath="$PROJECT_DIR$/EvolucaoRPG/EvolucaoRPG.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JAVAPOO.iml" filepath="$PROJECT_DIR$/.idea/JAVAPOO.iml" />
       <module fileurl="file://$PROJECT_DIR$/ListaAdultos/ListaAdultos.iml" filepath="$PROJECT_DIR$/ListaAdultos/ListaAdultos.iml" />
