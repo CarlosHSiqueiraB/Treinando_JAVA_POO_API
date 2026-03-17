@@ -8,13 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="api-MinhaPrimeiraApiRESTJAVA" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CadastroUsuarios" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CadastroUsuarios" options="-parameters" />
       <module name="api-MinhaPrimeiraApiRESTJAVA" options="-parameters" />
     </option>
   </component>
